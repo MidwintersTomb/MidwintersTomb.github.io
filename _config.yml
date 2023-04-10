@@ -1,5 +1,5 @@
+title: MidwintersTomb
+description: CTF write ups and other sundries.
 remote_theme: pages-themes/midnight@v0.2.0
 plugins:
 - jekyll-remote-theme
-title: [MidwintersTomb]
-description: CTF write ups and other sundries.
