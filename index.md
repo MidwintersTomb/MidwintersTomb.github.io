@@ -2,6 +2,10 @@
 layout: default
 ---
 
+## Thanks for stopping by.  This will be a work in progress.
+
+## - Winter
+
 ### [- Hack The Box - Netmon (Walkthrough) - December 12th, 2021](./2021-12-30-Netmon/)
 
 ### [- Hack The Box - Grandpa (Walkthrough) - June 15th, 2021](./2021-06-15-Grandpa/)
