@@ -8,6 +8,8 @@ layout: default
 
 ___
 
+### [- Virtual Machine - Butler (Walkthrough) - January 23rd, 2022](./2022-01-23-Butler/)
+
 ### [- Virtual Machine - Dev (Walkthrough) - January 19th, 2022](./2022-01-19-Dev/)
 
 ### [- Virtual Machine - Academy (Walkthrough) - January 10th, 2022](./2022-01-10-Academy/)
