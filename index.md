@@ -8,6 +8,8 @@ layout: default
 
 ___
 
+### [- Virtual Machine - Dev (Walkthrough) - January 19th, 2022](./2022-01-19-Dev/)
+
 ### [- Virtual Machine - Academy (Walkthrough) - January 10th, 2022](./2022-01-10-Academy/)
 
 ### [- Hack The Box - Netmon (Walkthrough) - December 12th, 2021](./2021-12-30-Netmon/)
