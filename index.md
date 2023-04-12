@@ -8,6 +8,8 @@ layout: default
 
 ___
 
+### [- Virtual Machine - Blackpearl (Walkthrough) - May 15th, 2022](./2022-05-15-Blackpearl/)
+
 ### [- Virtual Machine - Butler (Walkthrough) - January 23rd, 2022](./2022-01-23-Butler/)
 
 ### [- Virtual Machine - Dev (Walkthrough) - January 19th, 2022](./2022-01-19-Dev/)
