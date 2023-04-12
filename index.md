@@ -8,6 +8,8 @@ layout: default
 
 ___
 
+### [- Hack The Box - Chatterbox (Walkthrough) - December 14th, 2022](./2022-12-14-Chatterbox/)
+
 ### [- Hack The Box - Active (Walkthrough) - September 14th, 2022](./2022-09-14-Active/)
 
 ### [- Virtual Machine - Blackpearl (Walkthrough) - May 15th, 2022](./2022-05-15-Blackpearl/)
