@@ -8,6 +8,10 @@ layout: default
 
 ___
 
+### [- Hack The Box - Access (Walkthrough) - December 31st, 2022](./2022-12-31-Access/)
+
+### [- Hack The Box - Jeeves (Walkthrough) - December 31st, 2022](./2022-12-31-Jeeves/)
+
 ### [- Hack The Box - SecNotes (Walkthrough) - December 15th, 2022](./2022-12-15-SecNotes/)
 
 ### [- Hack The Box - Chatterbox (Walkthrough) - December 14th, 2022](./2022-12-14-Chatterbox/)
