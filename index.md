@@ -8,6 +8,8 @@ layout: default
 
 ___
 
+### [- Hack The Box - Arctic (Walkthrough) - December 31st, 2022](./2022-12-31-Arctic/)
+
 ### [- Hack The Box - Access (Walkthrough) - December 31st, 2022](./2022-12-31-Access/)
 
 ### [- Hack The Box - Jeeves (Walkthrough) - December 31st, 2022](./2022-12-31-Jeeves/)
