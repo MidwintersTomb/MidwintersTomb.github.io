@@ -8,6 +8,8 @@ layout: default
 
 ___
 
+### [- Hack The Box - Querier (Walkthrough) - December 31st, 2022](./2022-12-31-Querier/)
+
 ### [- Hack The Box - Bastion (Walkthrough) - December 31st, 2022](./2022-12-31-Bastion/)
 
 ### [- Hack The Box - Bastard (Walkthrough) - December 31st, 2022](./2022-12-31-Bastard/)
