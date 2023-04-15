@@ -81,3 +81,7 @@ Looks like we're now running as root, so let's grab the root flag.
 ![](./17.png)
 
 That's all for now, folks.
+
+___
+
+[Back](../)
