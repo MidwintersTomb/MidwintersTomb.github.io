@@ -113,3 +113,7 @@ Now we're root with a bash shell.
 ![](./25.png)
 
 And with that, we're done another box.
+
+___
+
+[Back](../)
