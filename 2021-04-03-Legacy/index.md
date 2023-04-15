@@ -57,3 +57,7 @@ And the root.
 ![](./12.png)
 
 Onward to the next machine.
+
+___
+
+[Back](../)
