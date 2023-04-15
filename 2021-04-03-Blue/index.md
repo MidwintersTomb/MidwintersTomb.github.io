@@ -67,3 +67,7 @@ And lastly, the root flag.
 ![](./14.png)
 
 Another box down, and we're moving on.
+
+___
+
+[Back](../)
