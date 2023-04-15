@@ -137,3 +137,7 @@ Now that we have the Administrator password, let's log back in via SSH and go ge
 ![](./30.png)
 
 See you in the next box.
+
+___
+
+[Back](../)
