@@ -63,3 +63,7 @@ With our shell, let's collect the flags.
 ![](./15.png)
 
 And we're done!
+
+___
+
+[Back](../)
