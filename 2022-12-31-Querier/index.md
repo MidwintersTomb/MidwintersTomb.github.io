@@ -119,3 +119,7 @@ Let's connect to SMB as the administrator and pick up our root flag.
 ![](./24.png)
 
 See you in the next box.
+
+___
+
+[Back](../)
