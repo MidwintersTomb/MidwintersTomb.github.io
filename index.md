@@ -55,3 +55,5 @@ ___
 ### [- Hack The Box - Legacy (Walkthrough) - April 3rd, 2021](./2021-04-03-Legacy/)
 
 ### [- Hack The Box - Lame (Walkthrough) - February 5th, 2021](./2021-02-05-Lame/)
+
+### [- Where To Start - January 31st, 2021](./2021-01-31-Start/)
