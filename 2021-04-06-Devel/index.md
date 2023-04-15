@@ -132,3 +132,7 @@ Escalation looks good, so let's grab the flags.
 ![](./28.png)
 
 That's a wrap.
+
+___
+
+[Back](../)
