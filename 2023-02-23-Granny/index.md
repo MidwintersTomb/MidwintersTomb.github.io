@@ -10,7 +10,7 @@ By now you know where this is going, of course it's ```nmap```.
 
 ![](./02.png)
 
-If we look at the results, it seems that this is basically [Grandpa](./2021-06-15-Grandpa/).
+If we look at the results, it seems that this is basically [Grandpa](../2021-06-15-Grandpa/).
 
 We already have the IIS6 exploit for CVE-2017-7269 downloaded, but if we didn't have it, we could get it here: https://github.com/g0rx/iis6-exploit-2017-CVE-2017-7269
 
