@@ -88,18 +88,6 @@ Now that we've modified ```monitor.sh``` we can call it with ```sudo``` and the 
 
 And there we are, another box completed.
 
+___
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+[Back](../)
