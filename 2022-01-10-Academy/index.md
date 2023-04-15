@@ -88,5 +88,6 @@ Success, we are now root.
 
 ![](./20.png)
 
+___
 
-
+[Back](../)
