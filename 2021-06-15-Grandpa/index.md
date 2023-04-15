@@ -89,3 +89,7 @@ Let's check out our listener and verify we're now the system account.
 Looks good, now let's grab the user and root flags.
 
 ![](./18.png)
+
+___
+
+[Back](../)
