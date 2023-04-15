@@ -250,3 +250,7 @@ Now that we're logged in as root, let's go grab the flag.
 ![](./46.png)
 
 Now to move on to another box.
+
+___
+
+[Back](../)
