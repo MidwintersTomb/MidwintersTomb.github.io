@@ -67,3 +67,7 @@ Let's take a look in that file and see if it contains both flags.
 ![](./14.png)
 
 Looks like that's the case, and this box is done.
+
+___
+
+[Back](../)
