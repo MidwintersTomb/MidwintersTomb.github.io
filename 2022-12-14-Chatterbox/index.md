@@ -72,3 +72,7 @@ Let's go grab that root flag and call it a day.
 ![](./16.png)
 
 And with that, we're done another box.
+
+___
+
+[Back](../)
