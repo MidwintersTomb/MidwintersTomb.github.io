@@ -67,3 +67,7 @@ Now let's grab the root flag.
 ![](./16.png)
 
 See you in the next box.
+
+___
+
+[Back](../)
