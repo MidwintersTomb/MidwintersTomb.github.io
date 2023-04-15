@@ -65,3 +65,7 @@ Now that we're the Administrator, let's go grab the flag.
 ![](./15.png)
 
 See you in the next box.
+
+___
+
+[Back](../)
