@@ -8,6 +8,8 @@ layout: default
 
 ___
 
+### [- Hack The Box - Granny (Walkthrough) - February 23rd, 2023](./2023-02-23-Granny/)
+
 ### [- Hack The Box - Querier (Walkthrough) - December 31st, 2022](./2022-12-31-Querier/)
 
 ### [- Hack The Box - Bastion (Walkthrough) - December 31st, 2022](./2022-12-31-Bastion/)
