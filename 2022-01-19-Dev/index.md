@@ -125,3 +125,7 @@ Now let's grab the flag.
 ![](./25.png)
 
 And with that, we've finished another box.
+
+___
+
+[Back](../)
