@@ -69,3 +69,7 @@ Looks like it was successful.  Now we'll go pick up the root flag.
 ![](./14.png)
 
 Catch you in the next box.
+
+___
+
+[Back](../)
