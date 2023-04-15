@@ -117,3 +117,8 @@ Once the sensor creates and runs itself, we should have a reverse shell.
 Now let's get the root flag.
 
 ![](./24.png)
+
+
+___
+
+[Back](../)
