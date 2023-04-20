@@ -68,4 +68,37 @@ See you in the next box.
 
 ___
 
+Findings
+
+___
+
+**Operating System:** Windows Server 2008 R2 Standard
+
+**IP Address:** 10.10.10.98
+
+**Open Ports:**
+- 21
+- 23
+- 80
+
+**Services Responding:**
+- FTP
+- Telnet
+- HTTP
+
+**Vulnerabilities Exploited:**
+- FTP share with anonymous access
+- Credentials stored in file
+- Administrator credentials stored with cmdkey
+
+**Configuration Insecurities:**
+- FTP share with anonymous access
+- Administrator credentials stored with cmdkey
+
+**General Findings:**
+- Consider placing FTP share behind authentication
+- Consider removing stored Administrator credentials
+
+___
+
 [Back](../)
