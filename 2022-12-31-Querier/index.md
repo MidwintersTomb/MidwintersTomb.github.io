@@ -122,4 +122,35 @@ See you in the next box.
 
 ___
 
+**Operating System:** Windows Server 2019 Standard
+
+**IP Address:** 10.10.10.125
+
+**Open Ports:**
+- 135
+- 139
+- 445
+- 1433
+
+**Services Responding:**
+- RPC
+- SMB
+- MS-SQL
+
+**Vulnerabilities Exploited:**
+- SMB share with anonymous access
+- Excel macro containing hardcoded credentials
+- Credentials stored in Groups.xml
+
+**Configuration Insecurities:**
+- SMB share with anonymous access
+- Credentials stored in Groups.xml
+
+**General Findings:**
+- Consider placing SMB share behind authentication
+- Consider if volume account needs xp_dirtree permissions
+- Consider clearing up stored credentials in Groups.xml
+
+___
+
 [Back](../)
