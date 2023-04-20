@@ -10,7 +10,7 @@ I clap, you clap, we all clap for ```nmap```.
 
 ![](./02.png)
 
-Looking at the results we have something we haven't seen before.  So let's search for AChat exploits.  (In this case, we're using https://github.com/mpgn/AChat-Reverse-TCP-Exploit)
+Looking at the results we have something we haven't seen before.  So let's search for AChat exploits.  (In this case, we're using [https://github.com/mpgn/AChat-Reverse-TCP-Exploit](https://github.com/mpgn/AChat-Reverse-TCP-Exploit))
 
 Let's ```git clone``` the repo to our ```/opt``` directory.
 
@@ -72,6 +72,48 @@ Let's go grab that root flag and call it a day.
 ![](./16.png)
 
 And with that, we're done another box.
+
+___
+
+Findings
+
+___
+
+**Operating System:** Windows Server 2008 R2 Standard
+
+**IP Address:** 10.10.10.74
+
+**Open Ports:**
+- 135
+- 139
+- 445
+- 9255
+- 9256
+- 49152
+- 49153
+- 49154
+- 49155
+- 49156
+- 49157
+
+**Services Responding:**
+- RPC
+- SMB
+- AChat
+
+**Vulnerabilities Exploited:**
+- CVE-2015-1578
+- CVE-2015-1577
+- Password reuse
+
+**Configuration Insecurities:**
+- Weak authentication scheme
+- Password reuse
+
+**General Findings:**
+- Consider replacing AChat due to CVE-2015-1578 and CVE-2015-1577 affecting software with no patch available
+- Consider strengthening authentication scheme
+- Consider changing Administrator password to a more secure, randomly generated password
 
 ___
 
