@@ -124,4 +124,46 @@ And with that, another box is finished.
 
 ___
 
+Findings
+
+___
+
+**Operating System:** Windows 10
+
+**IP Address:** 192.168.0.176
+
+**Open Ports:**
+- 135
+- 139
+- 445
+- 5040
+- 7680
+- 8080
+- 49664
+- 49665
+- 49666
+- 49667
+- 49668
+- 49669
+
+**Services Responding:**
+- RPC
+- SMB
+- Windows 10 Update Optimization
+- HTTP
+
+**Vulnerabilities Exploited:**
+- Weak password scheme
+- Web application running as administrator account
+
+**Configuration Insecurities:**
+- Weak administrative password scheme on web application
+- Web application running as administrator account
+
+**General Findings:**
+- Consider strengthening authenticated scheme for administrative access to web application
+- Consider running web application as a limited service account
+
+___
+
 [Back](../)
