@@ -66,4 +66,61 @@ And we're done!
 
 ___
 
+Findings
+
+___
+
+**Operating System:** Windows Server 2008 R2 Standard
+
+**IP Address:** 10.10.10.100
+
+**Open Ports:**
+- 53
+- 88
+- 135
+- 139
+- 389
+- 445
+- 464
+- 593
+- 636
+- 3268
+- 3269
+- 5722
+- 9389
+- 49152
+- 49153
+- 49154
+- 49155
+- 49157
+- 49158
+- 49165
+- 49166
+- 49168
+
+**Services Responding:**
+- DNS
+- Kerberos
+- RPC
+- LDAP
+- SMB
+- MC-NMF
+
+**Vulnerabilities Exploited:**
+- SMB share allows anonymous login
+- Groups.xml storing Group Policy Preferences
+- Administrator account using known breached password
+
+**Configuration Insecurities:**
+- SMB share allowing anonymous login
+- Group Policy Preferences stored in Groups.xml
+- Administrator account using known breached password
+
+**General Findings:**
+- Consider placing all SMB shares behind authentication
+- Consider removing Group Policy Preferences from Groups.xml
+- Consider strengthening authentication scheme for Administrator account
+
+___
+
 [Back](../)
