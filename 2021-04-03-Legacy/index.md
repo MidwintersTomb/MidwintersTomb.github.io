@@ -26,7 +26,7 @@ Let's run a ```nmap``` scan against it specifically to check if it's vulnerable.
 
 Well, that settles it.  It's vulnerable.  Let's grab an Eternal Blue exploit with a quick Google search.
 
-In this case we're going to use https://github.com/3ndG4me/AutoBlue-MS17-010.
+In this case we're going to use [https://github.com/3ndG4me/AutoBlue-MS17-010](https://github.com/3ndG4me/AutoBlue-MS17-010).
 
 Let's clone the repository into our ```/opt``` directory.
 
@@ -57,6 +57,33 @@ And the root.
 ![](./12.png)
 
 Onward to the next machine.
+
+___
+
+Findings
+
+___
+
+**Operating System:** Windows XP
+
+**IP Address:** 10.10.10.4
+
+**Open Ports:**
+- 139
+- 445
+
+**Services Responding:**
+- SMB
+
+**Vulnerabilities Exploited:**
+- MS17-010
+
+**Configuration Insecurities:**
+- Port 3389 not blocked while RDP is not in use, allowing RDP to be enabled and connect through firewall
+
+**General Findings:**
+- Consider replacing Windows XP due to being out of support
+  - If not able to be replaced, consider restricting ports further
 
 ___
 
