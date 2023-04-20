@@ -116,4 +116,40 @@ And with that, we're done another box.
 
 ___
 
+Findings
+
+___
+
+**Operating System:** Debian 10
+
+**IP Address:** 192.168.0.197
+
+**Open Ports:**
+- 22
+- 53
+- 80
+
+**Services Responding:**
+- SSH
+- DNS
+- HTTP
+
+**Vulnerabilities Exploited:**
+- CVE-2018-17552
+- CVE-2018-17553
+- SQL Injection
+- SETUID bit set for php7.3
+
+**Configuration Insecurities:**
+- phpinfo page exposed
+- Server error page exposing credentials and configuration
+- SETUID bit set for php7.3 allowing users to run commands in root context
+
+**General Findings:**
+- Consider changing server error pages to generic error page that do not expose configuration information
+- Consider updating Navigate CMS to v2.9.5 r1611
+- Consider removing SETUID bit from php7.3, limiting just to root account or sudoers
+
+___
+
 [Back](../)
