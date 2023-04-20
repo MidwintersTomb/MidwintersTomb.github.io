@@ -124,4 +124,37 @@ Another one down.  See you in the next box.
 
 ___
 
+Findings
+
+___
+
+**Operating System:** Windows 10
+
+**IP Address:** 10.10.10.63
+
+**Open Ports:**
+- 80
+- 135
+- 445
+- 50000
+
+**Services Responding:**
+- HTTP
+- RPC
+- SMB
+
+**Vulnerabilities Exploited:**
+- Web application requiring no authentication to access admin console
+- SeImpersonatePrivilege exploit
+
+**Configuration Insecurities:**
+- Web application with anonymous access to access admin console
+- Limited user has SeImpersonatePrivilege set
+
+**General Findings:**
+- Consider placing web application behind authentication
+- Consider removing SeImpersonatePrivilege from user account
+
+___
+
 [Back](../)
