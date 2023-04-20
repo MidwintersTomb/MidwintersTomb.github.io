@@ -12,7 +12,7 @@ Let's kick off ```nmap``` as you'd expect.
 
 Looks like we have port ```80``` open, serving up IIS 6.0.
 
-Let's run a search for "IIS 6.0 exploit github" on Google.  We're going to use https://github.com/g0rx/iis6-exploit-2017-CVE-2017-7269.
+Let's run a search for "IIS 6.0 exploit github" on Google.  We're going to use [https://github.com/g0rx/iis6-exploit-2017-CVE-2017-7269](https://github.com/g0rx/iis6-exploit-2017-CVE-2017-7269).
 
 Let's clone the github repo to our ```/opt``` directory.
 
@@ -42,13 +42,13 @@ Now let's check what privileges our current account has.
 
 Now that we know it's Server 2003 and we have the "seimpersonateprivilege" enabled, we can search for "seimpersonateprivilege exploit server 2003".
 
-We find http://nomoreroot.blogspot.com/2008/10/windows-2003-poc-exploit-for-token.html, however the link to the file is broken.
+We find [http://nomoreroot.blogspot.com/2008/10/windows-2003-poc-exploit-for-token.html](http://nomoreroot.blogspot.com/2008/10/windows-2003-poc-exploit-for-token.html), however the link to the file is broken.
 
-Though, we can use that info to instead run a search for "download churrasco.exe", which leads us to https://github.com/Re4son/Churrasco.
+Though, we can use that info to instead run a search for "download churrasco.exe", which leads us to [https://github.com/Re4son/Churrasco](https://github.com/Re4son/Churrasco).
 
-We'll download the file directly from https://github.com/Re4son/Churrasco/raw/master/churrasco.exe.
+We'll download the file directly from [https://github.com/Re4son/Churrasco/raw/master/churrasco.exe](https://github.com/Re4son/Churrasco/raw/master/churrasco.exe).
 
-Next, we need to get copy of ```nc.exe```.  If you're running Kali, you can grab it from your drive, or you can download a copy from https://eternallybored.org/misc/netcat/.
+Next, we need to get copy of ```nc.exe```.  If you're running Kali, you can grab it from your drive, or you can download a copy from [https://eternallybored.org/misc/netcat/](https://eternallybored.org/misc/netcat/).
 
 Now that we have both files, let's share both in a SMB share with Impacket.
 
@@ -89,6 +89,34 @@ Let's check out our listener and verify we're now the system account.
 Looks good, now let's grab the user and root flags.
 
 ![](./18.png)
+
+___
+
+Findings
+
+___
+
+**Operating System:** Windows Server 2003 Standard
+
+**IP Address:** 10.10.10.14
+
+**Open Ports:**
+- 80
+
+**Services Responding:**
+- HTTP
+
+**Vulnerabilities Exploited:**
+- CVE-2017-7269
+- MS09-012
+
+**Configuration Insecurities:**
+- IIS web server with WebDAV enabled
+
+**General Findings:**
+- Consider replacing Windows Server 2003 due to end of support
+  - If unable to be replaced, consider installing all missing patches to limit attack surface
+  - If unable to be replaced, WebDAV should be disabled if not in use
 
 ___
 
