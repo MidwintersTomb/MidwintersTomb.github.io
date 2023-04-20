@@ -16,7 +16,7 @@ Let's start with running ```nmap``` against the box.
 
 Being that SMB is open and this machine is called "Blue," one can assume that it's probably vulnerable to Eternal Blue.
 
-Let's go out to Google to find an Eternal Blue exploit on GitHub.  In this case we're going to use https://github.com/worawit/MS17-010.
+Let's go out to Google to find an Eternal Blue exploit on GitHub.  In this case we're going to use [https://github.com/worawit/MS17-010](https://github.com/worawit/MS17-010).
 
 Now, let's clone a copy of it to our ```/opt``` directory (I'm storing it under a folder for SMB attacks, but, sort how you see fit, go wild).
 
@@ -67,6 +67,43 @@ And lastly, the root flag.
 ![](./14.png)
 
 Another box down, and we're moving on.
+
+___
+
+Findings
+
+___
+
+**Operating System:** Windows 7 Service Pack 1
+
+**IP Address:** 10.10.10.40
+
+**Open Ports:**
+- 135
+- 139
+- 445
+- 49152
+- 49153
+- 49154
+- 49155
+- 49156
+- 49157
+
+**Services Responding:**
+- RPC
+- SMB
+
+**Vulnerabilities Exploited:**
+- MS17-010
+
+**Configuration Insecurities:**
+- None detected in process of exploitation
+
+**General Findings:**
+- Consider replacing Windows 7 Service Pack 1 due to end of support
+  - If not able to be replaced, consider installing all missing patches to limit attack surface
+  - If not able to be replaced or patched, consider disabling SMBv1
+  - If not able to be replaced or patched, consider restricting ports further
 
 ___
 
