@@ -34,7 +34,7 @@ Let's take a look to see what's on the FTP share.
 
 Looks like it's sharing out the IIS7 default page's directory.
 
-Let's grab a web shell off GitHub, and upload it to FTP share.  We'll use https://github.com/tennc/webshell/blob/master/asp/webshell.asp for this.
+Let's grab a web shell off GitHub, and upload it to FTP share.  We'll use [https://github.com/tennc/webshell/blob/master/asp/webshell.asp](https://github.com/tennc/webshell/blob/master/asp/webshell.asp) for this.
 
 Let's upload it to the FTP share.
 
@@ -67,7 +67,7 @@ Let's run ```systeminfo``` to get some more info on this machine.
 
 ![](./14.png)
 
-Now let's download Windows PrivEsc Check (https://github.com/pentestmonkey/windows-privesc-check) and copy the executable to the FTP share.
+Now let's download Windows PrivEsc Check ([https://github.com/pentestmonkey/windows-privesc-check](https://github.com/pentestmonkey/windows-privesc-check)) and copy the executable to the FTP share.
 
 ![](./15.png)
 
@@ -87,7 +87,7 @@ We'll then open the ```results.html``` page.
 
 If we look through the results, we'll see that the machine is vulnerable to MS11-046.
 
-We'll copy the code from https://www.exploit-db.com/exploits/40564 and open ```vi``` with a file named ```MS11-046.c```.
+We'll copy the code from [https://www.exploit-db.com/exploits/40564](https://www.exploit-db.com/exploits/40564) and open ```vi``` with a file named ```MS11-046.c```.
 
 ![](./19.png)
 
@@ -132,6 +132,35 @@ Escalation looks good, so let's grab the flags.
 ![](./28.png)
 
 That's a wrap.
+
+___
+
+Findings
+
+___
+
+**Operating System:** Windows 7
+
+**IP Address:** 10.10.10.5
+
+**Open Ports:**
+- 21
+- 80
+
+**Services Responding:**
+- FTP
+- HTTP
+
+**Vulnerabilities Exploited:**
+- MS11-046
+
+**Configuration Insecurities:**
+- FTP share with anonymous read and write permissions
+
+**General Findings:**
+- Consider placing FTP share behind authentication
+- Consider replacing Windows 7 due to end of support
+  - If unable to be replaced, consider installing all missing patches to limit attack surface
 
 ___
 
