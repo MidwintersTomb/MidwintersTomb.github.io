@@ -96,7 +96,7 @@ On port ```8080``` we have a directory of ```dev```, browsing to that we find a 
 
 Let's click register and create an account to poke around with.
 
-If we run a search for BoltWire vulnerabilities, we find that it has a vulnerability allowing directory traversal to read ```/etc/passwd```: https://www.exploit-db.com/exploits/48411
+If we run a search for BoltWire vulnerabilities, we find that it has a vulnerability allowing directory traversal to read ```/etc/passwd```: [https://www.exploit-db.com/exploits/48411](https://www.exploit-db.com/exploits/48411)
 
 Let's execute that request.
 
@@ -125,6 +125,48 @@ Now let's grab the flag.
 ![](./25.png)
 
 And with that, we've finished another box.
+
+___
+
+Findings
+
+___
+
+**Operating System:** Debian 10
+
+**IP Address:** 192.168.0.176
+
+**Open Ports:**
+- 22
+- 80
+- 111
+- 2049
+- 8080
+- 35875
+- 36163
+- 57759
+- 59699
+
+**Services Responding:**
+- SSH
+- HTTP
+- RPC
+- NFS
+
+**Vulnerabilities Exploited:**
+- Anonymous NFS access
+- Weak password scheme
+- Configuration file exposed with no authentication
+- Local file inclusion
+
+**Configuration Insecurities:**
+- NFS share allowing anonymous access
+- Configuration file including credentials exposed
+
+**General Findings:**
+- Consider placing NFS share behind authentication
+- Consider strengthening authentication if SSH keys are to be stored in a share
+- Consider upgrading BoltWire to version 7.10
 
 ___
 
