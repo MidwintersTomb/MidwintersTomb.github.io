@@ -253,4 +253,36 @@ Now to move on to another box.
 
 ___
 
+Findings
+
+___
+
+**Operating System:** Windows 10
+
+**IP Address:** 10.10.10.97
+
+**Open Ports:**
+- 80
+- 445
+- 8808
+
+**Services Responding:**
+- HTTP
+- SMB
+
+**Vulnerabilities Exploited:**
+- Insecure password reset mechanism
+
+**Configuration Insecurities:**
+- Password reset mechanism does not require entering current password
+- Passwords written down in notes
+- Passwords left in command history
+
+**General Findings:**
+- Consider updating password reset process to require entering current password
+- Consider removing passwords from notes files stored on servers
+- Consider clearing command history when passwords are used or passing credentials in a more secure method
+
+___
+
 [Back](../)
