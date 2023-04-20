@@ -16,7 +16,7 @@ Let's take a look at the web interface.
 
 ![](./03.png)
 
-Looks like a pretty simple page, so let's search for a httpfileserver 2.3 exploit.  We're going to use https://www.exploit-db.com/exploits/39161.
+Looks like a pretty simple page, so let's search for a httpfileserver 2.3 exploit.  We're going to use [https://www.exploit-db.com/exploits/39161](https://www.exploit-db.com/exploits/39161).
 
 We'll have to edit the python file to add in our IP and port for our listener.
 
@@ -42,7 +42,7 @@ Let's run a search for exploits on GitHub for Server 2012 R2 6.3 Build 9600.
 
 We see that MS16-032 comes back, however, it is not exploitable due to having only one CPU.
 
-If we look a bit further, we find that it should also be vulnerable to MS16-098.  We'll download https://github.com/SecWiki/windows-kernel-exploits/tree/master/MS16-098 for our purposes.
+If we look a bit further, we find that it should also be vulnerable to MS16-098.  We'll download [https://github.com/SecWiki/windows-kernel-exploits/tree/master/MS16-098](https://github.com/SecWiki/windows-kernel-exploits/tree/master/MS16-098) for our purposes.
 
 We are going to serve up ```bfill.exe``` using a python HTTP server.
 
@@ -69,6 +69,33 @@ Looks like it was successful.  Now we'll go pick up the root flag.
 ![](./14.png)
 
 Catch you in the next box.
+
+___
+
+Findings
+
+___
+
+**Operating System:** Windows Server 2012 R2 Standard
+
+**IP Address:** 10.10.10.8
+
+**Open Ports:**
+- 80
+
+**Services Responding:**
+- HTTP
+
+**Vulnerabilities Exploited:**
+- CVE-2014-6287
+- MS16-098
+
+**Configuration Insecurities:**
+- None detected in process of exploitation
+
+**General Findings:**
+- Consider updating HttpFileServer to HFS3 v0.43.0
+- Consider installing all missing operating system patches to reduce attack surface
 
 ___
 
