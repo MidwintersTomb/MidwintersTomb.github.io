@@ -30,7 +30,7 @@ If we examine the results from ```Wappalyzer```, we see that it's running Drupal
 
 ![](./07.png)
 
-If we look around for CVE's for Drupal 7, we find CVE-2018-7600, including this github: https://github.com/pimps/CVE-2018-7600
+If we look around for CVE's for Drupal 7, we find CVE-2018-7600, including this github: [https://github.com/pimps/CVE-2018-7600](https://github.com/pimps/CVE-2018-7600)
 
 Let's clone this repo, start up a webserver hosting ```netcat```, as well as a ```netcat``` listener, and then launch this exploit.
 
@@ -50,7 +50,7 @@ If we run Windows Exploit Suggester, it looks like the system is vulernable to M
 
 ![](./12.png)
 
-Additionally, if we do a ```whoami /priv``` on the box, we see that we have the ```SEImpersonate``` permission.
+Additionally, if we do a ```whoami /priv``` on the box, we see that we have the ```SEImpersonatePrivilege``` permission.
 
 ![](./13.png)
 
@@ -67,6 +67,38 @@ Looks like we're good.  Now let's go grab the root flag.
 ![](./16.png)
 
 See you in the next box.
+
+___
+
+Findings
+
+___
+
+**Operating System:** Windows Server 2008 R2 Datacenter
+
+**IP Address:** 10.10.10.9
+
+**Open Ports:**
+- 80
+- 135
+- 49154
+
+**Services Responding:**
+- RPC
+- HTTP
+
+**Vulnerabilities Exploited:**
+- CVE-2018-7600
+- MS10-059
+
+**Configuration Insecurities:**
+- None identified in process of exploiting
+
+**General Findings:**
+- Consider updating Drupal to 9.5 (or 7.95 if licensed for Long Term Support)
+- Consider replacing Windows Server 2008 R2 Datacenter due to end of support
+  - If unable to be replaced, consider installing all missing patches to limit attack surface
+- Consider removing SEImpersonatePrivilege for IUSR in current implementation if not required
 
 ___
 
