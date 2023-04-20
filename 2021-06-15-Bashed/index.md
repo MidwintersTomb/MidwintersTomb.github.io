@@ -58,7 +58,7 @@ Looks like our connection back is good.  Now let's run ```uname -a``` to see wha
 
 ![](./12.png)
 
-Based on the results, we can search for 4.4.0-62-generic privilege escalation.  We'll be using https://www.exploit-db.com/exploits/41458.
+Based on the results, we can search for 4.4.0-62-generic privilege escalation.  We'll be using [https://www.exploit-db.com/exploits/41458](https://www.exploit-db.com/exploits/41458).
 
 We'll use ```vi``` to paste the code and save it, after which we need to use ```gcc``` to compile the binary file.
 
@@ -81,6 +81,34 @@ Looks like we're now running as root, so let's grab the root flag.
 ![](./17.png)
 
 That's all for now, folks.
+
+___
+
+Findings
+
+___
+
+**Operating System:** Ubuntu 16.04.2 LTS
+
+**IP Address:** 10.10.10.68
+
+**Open Ports:**
+- 80
+
+**Services Responding:**
+- HTTP
+
+**Vulnerabilities Exploited:**
+- Exposed development environment with command line access
+- CVE-2017-6074
+
+**Configuration Insecurities:**
+- Development environment with command line access does not require authentication
+
+**General Findings:**
+- Consider placing development environment behind authentication
+- Consider replacing Ubuntu 16.0.4.2 due to end of support
+  - If unable to replace, consider installing all missing patches to limit attack surface
 
 ___
 
