@@ -118,7 +118,7 @@ If we look at ```confCons.xml``` we see the Administrator account stored for RDP
 
 ![](./26.png)
 
-However, if we attempt to decode the base64, we get unicode characters back.  Looking online, it seems that there is a tool specifically for decrypting mRemoteNG passwods.  (https://github.com/gquere/mRemoteNG_password_decrypt)
+However, if we attempt to decode the base64, we get unicode characters back.  Looking online, it seems that there is a tool specifically for decrypting mRemoteNG passwods.  ([https://github.com/gquere/mRemoteNG_password_decrypt](https://github.com/gquere/mRemoteNG_password_decrypt))
 
 Let's clone that repo and copy the ```confCons.xml``` file to our local machine.
 
@@ -137,6 +137,50 @@ Now that we have the Administrator password, let's log back in via SSH and go ge
 ![](./30.png)
 
 See you in the next box.
+
+___
+
+Findings
+
+___
+
+**Operating System:** Windows Server 2016 Standard
+
+**IP Address:** 10.10.10.134
+
+**Open Ports:**
+- 22
+- 135
+- 139
+- 445
+- 5985
+- 47001
+- 49664
+- 49665
+- 49666
+- 49667
+- 49668
+- 49669
+- 49670
+
+**Services Responding:**
+- SSH
+- RPC
+- SMB
+- HTTP
+
+**Vulnerabilities Exploited:**
+- SMB share with anonymous access
+- System image stored in share, including registry hives
+- mRemoteNG confCons.xml using crackable encryption
+
+**Configuration Insecurities:**
+- SMB share with anonymous access
+
+**General Findings:**
+- Consider placing SMB share behind authentication
+- Consider updating mRemoteNG to v1.76.20
+  - Consider changing mRemoteNG default password
 
 ___
 
