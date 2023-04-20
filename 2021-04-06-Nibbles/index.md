@@ -46,13 +46,13 @@ Now, if we go into the Plugins settings we see there's one called "My image" tha
 
 ![](./10.png)
 
-Let's grab a php webshell (here we're using https://github.com/artyuum/Simple-PHP-Web-Shell), and rename it to ```shell.php```.
+Let's grab a php webshell (here we're using [https://github.com/artyuum/Simple-PHP-Web-Shell](https://github.com/artyuum/Simple-PHP-Web-Shell)), and rename it to ```shell.php```.
 
 Now we'll edit the "My image" plugin, renaming it to "shell" with a caption of "shell" and upload our ```shell.php``` file, then we'll save the changes.
 
 ![](./11.png)
 
-Now that the webshell is loaded, let's browse to the plugin at http://10.10.10.75/nibbleblog/content/private/plugins/my_image/image.php.
+Now that the webshell is loaded, let's browse to the plugin at [http://10.10.10.75/nibbleblog/content/private/plugins/my_image/image.php](http://10.10.10.75/nibbleblog/content/private/plugins/my_image/image.php).
 
 ![](./12.png)
 
@@ -87,6 +87,36 @@ Now that we've modified ```monitor.sh``` we can call it with ```sudo``` and the 
 ![](./18.png)
 
 And there we are, another box completed.
+
+___
+
+Findings
+
+___
+
+**Operating System:** Ubuntu 16.04.3 LTS
+
+**IP Address:** 10.10.10.75
+
+**Open Ports:**
+- 22
+- 80
+
+**Services Responding:**
+- SSH
+- HTTP
+
+**Vulnerabilities Exploited:**
+- Weak authentication
+- Script running with root permissions from limited user account
+
+**Configuration Insecurities:**
+- Configuratin page configured with weak authentication
+- Script running with root permissions with user level write permissions
+
+**General Findings:**
+- Consider strengthening authentication scheme for web application
+- Consider changing monitor.sh script to only be writable by root account
 
 ___
 
