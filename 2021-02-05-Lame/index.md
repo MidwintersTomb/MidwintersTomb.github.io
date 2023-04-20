@@ -32,7 +32,7 @@ Our most likely targets will be a possible vulnerability of vsFTPd or, more like
 
 Looking at our Google results for vsFTPd, it would seem there is a potential backdoor, and we have choices of using metasploit or we can get exploit examples off of GitHub.  Being that you can only use metasploit/meterpreter on one machine in the OSCP, let's not make that a habit.
 
-Let's try the first GitHub result that came back: https://github.com/ahervias77/vsftpd-2.3.4-exploit
+Let's try the first GitHub result that came back: [https://github.com/ahervias77/vsftpd-2.3.4-exploit](https://github.com/ahervias77/vsftpd-2.3.4-exploit)
 
 We'll browse to ```/opt``` and create a folder for vsFTPd, then let's clone that project.
 
@@ -42,9 +42,9 @@ Okay, let's run this exploit and see where we end up.
 
 ![](./07.png)
 
-So, at this point, it seems that either a.) the backdoor has been fixed, or b.) the version is exploitable, which should spawn a shell on port ```6200```, however, being that we cannot connect to the shell on ```6200```, could be a local firewall blocking that port.  Either way, no luck there.  On to SMB!
+So, at this point, it seems that the version is exploitable, which should spawn a shell on port ```6200```, however, being that we cannot connect to the shell on ```6200```, could be a local firewall blocking that port.  On to SMB!
 
-Let's run a Google search for 3.0.20-Debian exploits, and again, we'll look for GitHub.  Let's grab the first search result that came back: https://github.com/macha97/exploit-smb-3.0.20.git
+Let's run a Google search for 3.0.20-Debian exploits, and again, we'll look for GitHub.  Let's grab the first search result that came back: [https://github.com/macha97/exploit-smb-3.0.20.git](https://github.com/macha97/exploit-smb-3.0.20.git)
 
 We'll browse to ```/opt``` and create a folder for SMB, then let's clone that project.
 
@@ -107,6 +107,42 @@ That's one flag, now for the other!
 ![](./22.png)
 
 And there we have it.  Both flags.
+
+___
+
+Findings
+
+___
+
+**Operating System:** Ubuntu 8.04
+
+**IP Address:** 10.10.10.3
+
+**Open Ports:**
+- 21
+- 22
+- 139
+- 445
+- 3632
+
+**Services Responding:**
+- FTP
+- SSH
+- Samba
+- distccd
+
+**Vulnerabilities Exploited:**
+- CVE-2011-2523(exploited, blocked by firewall)
+- CVE-2007-2447
+
+**Configuration Insecurities:**
+- None detected in process of exploitation
+
+**General Findings:**
+- Considering updating vsFTPd to v3.0.3
+- Consider replacing Ubuntu 8.04 due to end of support
+  - If unable to be replaced, consider installing all missing patches to limit attack surface
+  - If not able to be replaced, consider restricting ports or only allowing SSH and port forwarding service connections over SSH
 
 ___
 
