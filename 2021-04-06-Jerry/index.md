@@ -70,4 +70,34 @@ Looks like that's the case, and this box is done.
 
 ___
 
+Findings
+
+___
+
+**Operating System:** Windows Server 2012 R2 Standard
+
+**IP Address:** 10.10.10.95
+
+**Open Ports:**
+- 8080
+
+**Services Responding:**
+- HTTP
+
+**Vulnerabilities Exploited:**
+- Weak authentication
+- Service running as elevated account
+
+**Configuration Insecurities:**
+- Apache configuration exposed
+- Apache configuration using default administrator credentials
+- Apache web service running as NT Authority\System
+
+**General Findings:**
+- Consider restricting access to Apache configuration page
+- Consider strengthening authentication scheme for Apache
+- Consider running Apache as a limited service account
+
+___
+
 [Back](../)
