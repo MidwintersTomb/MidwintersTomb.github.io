@@ -118,6 +118,49 @@ Now let's get the root flag.
 
 ![](./24.png)
 
+___
+
+Findings
+
+___
+
+**Operating System:** Windows Server 2016 Standard
+
+**IP Address:** 10.10.10.152
+
+**Open Ports:**
+- 21
+- 80
+- 135
+- 139
+- 5985
+- 47001
+- 49664
+- 49665
+- 49666
+- 49667
+- 49668
+- 49669
+
+**Services Responding:**
+- FTP
+- HTTP
+- RPC
+
+**Vulnerabilities Exploited:**
+- Anonymous FTP share containing full drive
+- Stored credentials in configuration files
+- Easily guessable password scheme
+- Application running as elevated account
+
+**Configuration Insecurities:**
+- Web application running as system account
+
+**General Findings:**
+- Consider placing FTP share behind authentication
+- Consider cleaning up backup configuration files that contain stored credentials
+- Consider strengthening authentication scheme
+- Consider running PRTG Network Monitor as a limited service account
 
 ___
 
