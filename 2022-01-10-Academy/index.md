@@ -40,7 +40,7 @@ That worked.  Took us right to a change password menu after putting in the crack
 
 ![](./09.png)
 
-We have no photo, but can upload a file.  Let's try to upload a PHP web shell as the photo.  I will be using White Winter Wolf's PHP webshell (https://github.com/WhiteWinterWolf/wwwolf-php-webshell).
+We have no photo, but can upload a file.  Let's try to upload a PHP web shell as the photo.  I will be using White Winter Wolf's PHP webshell ([https://github.com/WhiteWinterWolf/wwwolf-php-webshell](https://github.com/WhiteWinterWolf/wwwolf-php-webshell)).
 
 That looks like it took.  Now let's view the properties of the "image" to see where it's located on the webserver, so we can go use that shell.
 
@@ -50,7 +50,7 @@ Looks like the webshell is loading, let's give it a  whirl.
 
 ![](./11.png)
 
-Now to find some vulnerabilities on the server.  Let's download LINPEAS from https://github.com/carlospolop/PEASS-ng/releases/latest/download/linpeas.sh and then upload it to the server.
+Now to find some vulnerabilities on the server.  Let's download LINPEAS from [https://github.com/carlospolop/PEASS-ng/releases/latest/download/linpeas.sh](https://github.com/carlospolop/PEASS-ng/releases/latest/download/linpeas.sh) and then upload it to the server.
 
 ![](./12.png)
 
@@ -87,6 +87,44 @@ We wait for a few since we don't know what the script interval is.
 Success, we are now root.
 
 ![](./20.png)
+
+___
+
+Findings
+
+___
+
+**Operating System:** Debian 10
+
+**IP Address:** 192.168.0.205
+
+**Open Ports:**
+- 21
+- 22
+- 80
+
+**Services Responding:**
+- FTP
+- SSH
+- HTTP
+
+**Vulnerabilities Exploited:**
+- Anonymous FTP access
+- Exposed user credentials
+- Lack of file type validation
+- Password reuse
+- User writable script running with root permissions
+
+**Configuration Insecurities:**
+- Web application not validating file type on upload
+- Script running as root writable by limited user
+
+**General Findings:**
+- Consider placing FTP share behind authentication
+- Consider cleaning up credentials stored in shares
+- Consider using separate passwords for user and service accounts
+- Consider updating web application to validate uploaded file types to only those appropriate
+- Consider updating scripts running as root to only be writable by root
 
 ___
 
