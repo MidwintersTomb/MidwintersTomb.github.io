@@ -12,7 +12,7 @@ By now you know where this is going, of course it's ```nmap```.
 
 If we look at the results, it seems that this is basically [Grandpa](../2021-06-15-Grandpa/).
 
-We already have the IIS6 exploit for CVE-2017-7269 downloaded, but if we didn't have it, we could get it here: https://github.com/g0rx/iis6-exploit-2017-CVE-2017-7269
+We already have the IIS6 exploit for CVE-2017-7269 downloaded, but if we didn't have it, we could get it here: [https://github.com/g0rx/iis6-exploit-2017-CVE-2017-7269](https://github.com/g0rx/iis6-exploit-2017-CVE-2017-7269)
 
 We'll setup a listener and kick off the exploit.
 
@@ -36,7 +36,7 @@ We'll make a temp folder to run it from.
 
 ![](./07.png)
 
-Now, if we didn't already have Churrasco, we could download it from https://github.com/Re4son/Churrasco/raw/master/churrasco.exe.
+Now, if we didn't already have Churrasco, we could download it from [https://github.com/Re4son/Churrasco/raw/master/churrasco.exe](https://github.com/Re4son/Churrasco/raw/master/churrasco.exe).
 
 Now we'll share ```churrasco.exe``` and ```nc.exe``` via SMB.
 
@@ -63,6 +63,30 @@ Now that we're root, let's grab the flags.
 ![](./13.png)
 
 See you in the next box.
+
+___
+
+**Operating System:** Windows Server 2003 Standard
+
+**IP Address:** 10.10.10.15
+
+**Open Ports:**
+- 80
+
+**Services Responding:**
+- HTTP
+
+**Vulnerabilities Exploited:**
+- CVE-2017-7269
+- MS09-012
+
+**Configuration Insecurities:**
+- IIS web server with WebDAV enabled
+
+**General Findings:**
+- Consider replacing Windows Server 2003 due to end of support
+  - If unable to be replaced, consider installing all missing patches to reduce attack surface
+  - If unable to be replaced, WebDAV should be disabled if not in use
 
 ___
 
