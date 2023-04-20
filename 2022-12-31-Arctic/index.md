@@ -56,7 +56,7 @@ We see that there's a kernel exploit that can potentially elevate privileges.
 
 ![](./13.png)
 
-We've seen this before.  Let's browse out to https://github.com/SecWiki/windows-kernel-exploits/tree/master/MS10-059, download the executable, and copy it over to our victim.
+We've seen this before.  Let's browse out to [https://github.com/SecWiki/windows-kernel-exploits/tree/master/MS10-059](https://github.com/SecWiki/windows-kernel-exploits/tree/master/MS10-059), download the executable, and copy it over to our victim.
 
 ![](./14.png)
 
@@ -67,6 +67,38 @@ Now let's grab the root flag.
 ![](./16.png)
 
 See you in the next box.
+
+___
+
+Findings
+
+___
+
+**Operating System:** Windows Server 2008 R2 Standard
+
+**IP Address:** 10.10.10.11
+
+**Open Ports:**
+- 135
+- 8500
+- 49154
+
+**Services Responding:**
+- RPC
+- HTTP
+
+**Vulnerabilities Exploited:**
+- CVE-2009-2265
+- MS10-059
+
+**Configuration Insecurities:**
+- Exposed directory listing
+
+**General Findings:**
+- Consider disabling directory listing
+- Consider updating ColdFusion to 2021 release
+- Consider replacing Windows Server 2008 R2 Standard due to end of support
+  - If unable to be replaced, consider installing all missing patches to limit attack surface
 
 ___
 
