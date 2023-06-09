@@ -66,6 +66,10 @@ See you in the next box.
 
 ___
 
+Findings
+
+___
+
 **Operating System:** Windows Server 2003 Standard
 
 **IP Address:** 10.10.10.15
