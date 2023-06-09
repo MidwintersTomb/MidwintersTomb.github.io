@@ -114,6 +114,10 @@ And we're done.  Catch you in the next box.
 
 ___
 
+Findings
+
+___
+
 **Operating System:** Windows Server 2008 R2 Standard Service Pack 1
 
 **IP Address:** 10.10.10.52
